@@ -13,10 +13,10 @@ public class DateAndTime {
             System.out.println(now);
             System.out.println(yesterday);
 
-            // ZonedDateTime zoneTime = ZonedDateTime.now();
-            // Set<String> zoneId = ZoneId.getAvailableZoneIds();
-            // System.out.println(zoneTime);
-            // System.out.println(zoneId.toString());
+            ZonedDateTime zoneTime = ZonedDateTime.now();
+            Set<String> zoneId = ZoneId.getAvailableZoneIds();
+            System.out.println(zoneTime);
+            System.out.println(zoneId.toString());
 
             ZonedDateTime IndiaTime = ZonedDateTime.now();
             ZonedDateTime NYCTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
