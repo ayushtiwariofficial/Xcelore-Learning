@@ -18,16 +18,18 @@ public class FunctionExample {
         };
 
         Student s1 = new Student("ayush", 1);
-        Student s2 = new Student("ayush", 1);
-        Student s3 = new Student("ayush", 1);
+        Student s2 = new Student("asish", 2);
+        Student s3 = new Student("anurag",3);
 
         List<Student> studentList = Arrays.asList(s1,s2,s3);
+
+        System.out.println(students.apply(studentList));
     }
 
     
 }
 
-public static class Student {
+class Student {
     private String name;
     private int id;
 
@@ -42,5 +44,9 @@ public static class Student {
 
     public int getId() {
         return this.id;
+    }
+
+    public String toString() {
+        return "Name: "+ this.name + " | Id: " + this.id;
     }
 }
