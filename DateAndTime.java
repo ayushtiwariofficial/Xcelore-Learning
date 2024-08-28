@@ -13,9 +13,9 @@ public class DateAndTime {
             System.out.println(now);
             System.out.println(yesterday);
 
-            ZonedDateTime zoneTime = ZonedDateTime.now();
-            Set<String> zoneId = ZoneId.getAvailableZoneIds();
-            System.out.println(zoneTime);
+            // ZonedDateTime zoneTime = ZonedDateTime.now();
+            // Set<String> zoneId = ZoneId.getAvailableZoneIds();
+            // System.out.println(zoneTime);
             // System.out.println(zoneId.toString());
 
             ZonedDateTime IndiaTime = ZonedDateTime.now();
